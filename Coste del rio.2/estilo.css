@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Prata&display=swap');
+
+:root {
+    --primario: rgb(94, 59, 59);
+    --secundario: #2A3C7D;
+    --texto: #fbf9f5;
+    --footer-text-color: #fbf9f5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+body {
+    background-color: #231F1E;    
+    width: 100%;
+    font-family: 'Prata', serif;
+    overflow-x: hidden;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    height: 10vh;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 10%, 10%, 60%, 10%, 10%;
+    grid-template-rows: (1fr);
+    width: 70%;
+}
+
+.navlogo {
+    width: 250px;
+    height: 84px;
+}
+
+.navbutton {
+    display: none;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontainer {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footercontainer h2, h3 {
+    color: var(--footer-text-color);
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.instagramcontainer {
+    justify-content: center;
+    align-items: center;
+}
+
+.igicono {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.AMA {
+    margin-top: 7%;
+    width: 60%;
+}
+
+.reservascontainer {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--texto);
+}
+
+.reservastext {
+    position: absolute;
+    font-size: 16vh;
+    z-index: 99;
+}
+
+.sobrenosotroscontainer {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.sobrenosotros {
+    display: flex;
+    flex-direction:column;
+    justify-content: left;
+    color: var(--texto);
+    width: 100%;
+}
+.sobrenosotros p { font-family: 'roboto slab', serif;
+}
+
+.menucontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: var(--texto);
+    width: 30%;
+}
+
+.menu h4{
+    font-size: xx-large;
+}
+
+.menu h5{
+    margin: 0px;
+}
+
+.menu p{
+    margin-top: 0px;
+}
+
+.carta {
+   background-color: var(--secundario);
+   padding-left: 1vh;
+   padding-right: 1vh;
+   text-align: center;
+   vertical-align: middle;
+    height: 4vh;
+    width: auto;
+    line-height: 4.5vh;
+}
+
+.item-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+.item-2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item-3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item-4 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.item-1:hover {
+    color: #2A3C7D;
+}
+.item-2:hover {
+    color: #2A3C7D;
+}
+.item-3:hover {
+    color: #2A3C7D;
+}
+.item-4:hover {
+    color: #2A3C7D;
+}
+.gatitonosotros {
+    right: 13%;
+    position: absolute;
+    top: 30%;
+}
+
+
+.part1 {
+    width: 30vh;
+}
+
+.part2 {
+    width: 30vh;
+}
+
+.part3 {
+    width: 30vh;
+}
+
+.part4 {
+    width: 30vh;
+}
+
+.sectioncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vh;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vh;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservasimg {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        grid-template-columns: 15%, 15%, 40%, 15%, 15%;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .navul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .navbutton {
+        display: block;
+    }
+    .item {
+        display: none;
+    }
+    .item-1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .item-2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .item-3 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .item-4 {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .gatitonosotros {
+        right: 7%;
+        position: absolute;
+        top: 33%;
+    }
+    
+    .section1 {
+        display: block;
+    }
+    .section2 {
+        display: block;
+    }
+    .section3 {
+        display: block;
+    }
+    .sectioncontainer {
+        display: block;
+    }
+    .part1 {
+        position: inherit;
+    }
+    .part2 {
+        position: inherit;
+    }
+    .part3 {
+        position: inherit;
+    }
+    .part4 {
+        position: inherit;
+    }
+    .menu h4{
+        font-size: large;
+    }
+    .reservasimg {
+        width: 450px;
+    }
+    .reservastext {
+        position: absolute;
+        font-size: 12vh;
+        z-index: 99;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 6vh;
+        grid-template-columns: 15%, 15%, 40%, 15%, 15%;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .navul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .navlogo {
+        width: 100px;
+        height: 40px;
+    }
+    .sobrenosotros {
+        width: 50%;
+    }
+    .menu {
+        width: 70%;
+    }
+    .gatitonosotros {
+        left: 70%;
+        position: absolute;
+        top: 43%;
+        width: 165px;
+    }
+   
+    .reservasimg {
+        width: 300px;
+    }
+    .reservastext {
+        position: absolute;
+        font-size: 8vh;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" href="Imagenes web/LOGO NEGRO.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Costee del rio</title>
+</head>
+<body>
+<header>
+    <div class="navcontainer">
+        <nav class="navbar">
+            <a style="grid-row-start: 1; grid-row-end: 2; grid-column-start: 1; grid-column-end: 2;" href="javascript:void(0);" class="navbutton" onclick="displayNavBar()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <div style="grid-row-start: 1; grid-row-end: 2; grid-column-start: 5; grid-column-end: 6;" class="navbutton">
+                <i class="fa fa-search fa-2x"></i>
+            </div>
+            <a class="item item-1" href="reseñas.html">Reseñas</a>
+            <a class="item item-2" href="nosotros.html">Nosotros</a>
+            <a style="grid-row-start: 1; grid-row-end: 2; grid-column-start: 3; grid-column-end: 4;" href="index.html"><img class="navlogo" src="Imagenes web/costee blanco logo.png" alt="LOGO"></a>
+            <a class="item item-3" href="menu.html">Menu</a>
+            <a class="item item-4" href="reservas.html">Reservas</a>
+        </nav>
+    </div>
+</header>
+<div class="reservascontainer">
+    <h1 class="reservastext">Reservas</h1>
+    <img class="reservasimg" src="Imagenes web/GANZO.png" alt="RESERVA">
+</div>
+<footer>
+    <div class="footercontainer">
+        <div class="instagramcontainer flexrow"><img class="igicono" src="Imagenes web\ICONO IG.png" alt="iglogo"><h2>@Costeedelrio</h2></div>
+        <h3>Las redes sociales amplifican la felicidad</h3>
+    </div>
+</footer>
+<script>
+    function displayNavBar() {
+    var x = document.getElementsByClassName("item");
+    var arr = Array.prototype.slice.call( x )
+    arr.forEach(element => {
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    });
+}
+
+</script>
+</body>
+</html>
